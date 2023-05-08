@@ -20,25 +20,18 @@ include('sessaoCookie/sessao.php');
         <h2>Índice dos Exercícios</h2>
     </header>
     <nav class="navegacao">
-        <span class='usuario'>Usuário : <?= $_SESSION['usuario'] ?></span>
+        <span class='usuario'>Usuário: <?= $_SESSION['usuario'] ?></span>
         <a href="logout.php" class="vermelho">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
                 <div class="modulo vermelho">
-                    <h3>Sessão & Cookie</h3>
+                    <h3>Conta de Energia</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=sessaoCookie&file=sessao1">
-                                Sessão #1
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="exercicio.php?dir=sessaoCookie&file=gerenciamentoSessao">
-                                Gerenciamento da Sessão
+                            <a href="exercicio.php?dir=contaEnergia&file=calculoContaEnergia">
+                                Cálculo Conta de Energia
                             </a>
                         </li>
                     </ul>
