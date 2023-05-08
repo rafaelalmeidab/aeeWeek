@@ -32,7 +32,7 @@
                 $_SESSION['usuario'] = $user['nome'];
 
                 //COOKIE (10 MINUTOS)
-                $exp = time() + (60 * 1);
+                $exp = time() + (60 * 10);
                 setcookie('usuario', $_SESSION['usuario'], $exp);
 
                 header("Location: http://localhost:8080/aeeWeek/index.php");
