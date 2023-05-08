@@ -1,6 +1,6 @@
-<h2><b>PHP Course</b></h2>
+<h2><b>AEE Week Course</b></h2>
 
-This course covers the fundamentals of PHP programming, including arrays, conditional and repetitive structures, namespaces, APIs, sessions and cookies, forms, databases, and error handling. The goal of this course is to provide a comprehensive understanding of PHP programming, and to equip students with the skills necessary to build dynamic, interactive web applications.<br>
+This course covers the fundamentals of PHP, HTML, JavaScript and MYSQL. The goal of this course is to provide a comprehensive understanding of PHP programming, and to equip students with the skills necessary to build dynamic, interactive web applications.<br>
 
 ![alt text](https://github.com/rafaelalmeidab/php7/blob/main/assets/img/screenshot_curso.png)
 
@@ -61,4 +61,4 @@ PHP: The Right Way: https://phptherightway.com/<br>
 PHP Standards Recommendations (PSRs): https://www.php-fig.org/psr/<br>
 
 <h3><b>Credits</b></h3>
-This course was created by Cod3r.<br>
+This course was created by Rafael Almeida and Wilson Gabriel.<br>

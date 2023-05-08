@@ -35,7 +35,7 @@
                 $exp = time() + (60 * 1);
                 setcookie('usuario', $_SESSION['usuario'], $exp);
 
-                header("Location: http://localhost:8080/php7/index.php");
+                header("Location: http://localhost:8080/aeeWeek/index.php");
             }
         }
 
@@ -59,7 +59,7 @@
 
 <body class="login">
     <header class="cabecalho">
-        <h1>Curso PHP</h1>
+        <h1>AEE Week - Web Development Course</h1>
         <h2>Seja bem-vindo!</h2>
     </header>
     <main class="principal">
@@ -90,7 +90,7 @@
         </div>
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS © <?= date('Y'); ?>
+        AEE WEEK <?= date('Y'); ?>
     </footer>
 </body>
 

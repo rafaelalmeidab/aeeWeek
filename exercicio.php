@@ -35,7 +35,7 @@ include('sessaoCookie/sessao.php');
         </div>
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS © <?= date('Y'); ?>
+        AEE WEEK <?= date('Y'); ?>
     </footer>
 </body>
 
