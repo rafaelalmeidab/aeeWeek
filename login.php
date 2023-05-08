@@ -54,7 +54,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="recursos/css/estilo.css">
     <link rel="stylesheet" href="recursos/css/login.css">
-    <title>Curso PHP</title>
+    <title>AEE Week - Web Development Course</title>
 </head>
 
 <body class="login">
