@@ -14,14 +14,6 @@ Before taking this course, students should have a basic understanding of program
 -Multidimensional arrays<br>
 -Sorting arrays<br>
 
-<h3><b>Conditional and Repetitive Structures</b></h3>
--If statements<br>
--Switch statements<br>
--Loops (while, for, foreach)<br>
-
-<h3><b>Namespaces</b></h3>
--Defining and using namespaces<br>
-
 <!--
 <h3><b>APIs</b></h3><br>
 -RESTful APIs<br>
@@ -30,23 +22,7 @@ Before taking this course, students should have a basic understanding of program
 -API authentication<br>
 -->
 
-<h3><b>Sessions and Cookies</b></h3>
--Using sessions to store user data<br>
--Using cookies to remember user preferences<br>
 
-<h3><b>Forms</b></h3>
--Creating HTML forms<br>
--Handling form data with PHP<br>
--Validating form data<br>
-
-<h3><b>Databases</b></h3>
--Connecting to a database<br>
--CRUD operations (Create, Read, Update, Delete)<br>
--SQL queries<br>
--Using PDO to access databases<br>
--Error Handling<br>
--Handling errors and exceptions<br>
--Custom error handling<br>
 
 <h3><b>Course Structure</b></h3>
 The course is divided into modules, each covering a specific topic. Each module includes lectures, code examples, and exercises to reinforce learning. The course also includes a final project, where students will use the skills they have learned to build a web application.<br>
