@@ -44,7 +44,7 @@
         var valorFinal = parseFloat(preco * consumo);
         
         if(valorFinal >= 0){
-            valorFinal     = doisDecimais(valorFinal);
+            valorFinal     = moedaBR(valorFinal);
             $("#labelValorFinal").html("Sua conta de energia custa " + valorFinal);
         }
         else{
@@ -73,7 +73,7 @@
 
     });
 
-    function doisDecimais(valor) {
+    function moedaBR(valor) {
         return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     }
 
