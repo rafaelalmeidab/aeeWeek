@@ -26,37 +26,71 @@ include('sessaoCookie/sessao.php');
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo vermelho">
-                    <h3>Conta de Energia</h3>
+
+                <!-- <div class="modulo curso">
+                    <h3>Cadastro</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=contaEnergia&file=calculoContaEnergia">
+                            <a href="exercicio.php?dir=cadastro&file=incluirUsuario">
+                                Inserir Usuário
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=cadastro&file=alterarUsuario">
+                                Alterar Usuário
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=cadastro&file=excluirUsuario">
+                                Excluir Usuário
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="modulo curso">
+                    <h3>Banco de Dados</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=criarBanco">
+                                Criando Banco de Dados
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modulo curso">
+                    <h3>Gerenciamento</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=gerenciamento&file=calculoContaEnergia">
                                 Cálculo Conta de Energia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=gerenciamento&file=conversorUnidades">
+                                Conversor de Unidades
                             </a>
                         </li>
                     </ul>
                 </div>
              
-                <div class="modulo roxo">
-                    <h3>Namespace</h3>
+                <div class="modulo curso">
+                    <h3>Informações</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=namespace&file=basicoNamespace">
-                                Básico Namespace
+                            <a href="exercicio.php?dir=informacoes&file=tiposTarifas">
+                                Tipos de Tarifas
                             </a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=namespace&file=subNamespace">
-                                Sub-Namespace
-                            </a>
-                        </li>
-                        <li>
-                            <a href="exercicio.php?dir=namespace&file=useAs">
-                                Use/As
+                            <a href="exercicio.php?dir=informacoes&file=unidadesEnergia">
+                                Unidades de Energia
                             </a>
                         </li>
                     </ul>
                 </div>
+
             </nav>
         </div>
     </main>

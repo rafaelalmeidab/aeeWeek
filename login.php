@@ -1,4 +1,8 @@
-<?php
+<?php   
+
+    require_once "logout.php";
+    require_once "db/conexao.php";
+
     session_start();
 
     $_SESSION['erros'] = '';
@@ -10,6 +14,27 @@
     $senha = isset($_POST['senha'])? $_POST['senha'] : '';
 
     if ($email) {
+        $conexao = novaConexao();
+        $sql     = "SELECT USUARIO, SENHA FROM usuarios WHERE USUARIO = '$email'";   
+        $result  = $conexao->query($sql);
+        $result  = mysqli_fetch_assoc($result);
+
+        if($result && ($result['SENHA'] == md5($senha))){
+            $_SESSION['erros'] = null;
+            $_SESSION['usuario'] = $result['USUARIO'];
+
+            //COOKIE (10 MINUTOS)
+            $exp = time() + (60 * 10);
+            setcookie('usuario', $_SESSION['usuario'], $exp);
+            
+            header("Location: http://localhost:8080/aeeWeek/index.php");
+        }
+        else{
+            echo $conexao->error();
+            $_SESSION['erros'] = ['Usuário/senha inválido!'];
+        }
+
+        /*
         $users = [
             [
                 "nome" => "Rafael Almeida",
@@ -38,6 +63,7 @@
                 header("Location: http://localhost:8080/aeeWeek/index.php");
             }
         }
+        */
 
         if (!isset($_SESSION['usuario'])) {
             $_SESSION['erros'] = ['Usuário/senha inválido!'];

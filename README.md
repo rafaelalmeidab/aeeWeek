@@ -2,7 +2,7 @@
 
 This course covers the fundamentals of PHP, HTML, JavaScript and MYSQL. The goal of this course is to provide a comprehensive understanding of PHP programming, and to equip students with the skills necessary to build dynamic, interactive web applications.<br>
 
-![alt text](https://github.com/rafaelalmeidab/php7/blob/main/assets/img/screenshot_curso.png)
+![alt text](https://github.com/rafaelalmeidab/aeeWeek/blob/main/assets/img/screenshot_curso.png)
 
 <h3><b>Prerequisites</b></h3>
 Before taking this course, students should have a basic understanding of programming concepts, such as variables, functions, and control structures. Knowledge of HTML and CSS is also recommended.<br>
