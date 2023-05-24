@@ -1,5 +1,10 @@
 <?php   
 
+    require_once "logout.php";
+    require_once "db/conexao.php";
+
+    session_start();
+
     $_SESSION['erros'] = '';
     $_SESSION['user'] = '';
     $email = '';
@@ -8,7 +13,62 @@
     $email = isset($_POST['email'])? $_POST['email'] : '';
     $senha = isset($_POST['senha'])? $_POST['senha'] : '';
 
-  
+    if ($email) {
+        $conexao = novaConexao();
+        $sql     = "SELECT USUARIO, SENHA FROM usuarios WHERE USUARIO = '$email'";   
+        $result  = $conexao->query($sql);
+        $result  = mysqli_fetch_assoc($result);
+
+        if($result && ($result['SENHA'] == md5($senha))){
+            $_SESSION['erros'] = null;
+            $_SESSION['usuario'] = $result['USUARIO'];
+
+            //COOKIE (10 MINUTOS)
+            $exp = time() + (60 * 10);
+            setcookie('usuario', $_SESSION['usuario'], $exp);
+            
+            header("Location: http://localhost/aeeWeek/index.php");
+        }
+        else{
+            echo $conexao->error();
+            $_SESSION['erros'] = ['Usuário/senha inválido!'];
+        }
+
+        /*
+        $users = [
+            [
+                "nome" => "Rafael Almeida",
+                "email" => "rafael@hotmail.com",
+                "senha" => "123"
+            ],
+            [
+                "nome" => "Teste",
+                "email" => "teste@teste.com",
+                "senha" => "teste"
+            ]
+        ];
+
+        foreach ($users as $user) {
+            $emailValido = $email === $user['email'];
+            $senhaValido = $senha === $user['senha'];
+
+            if ($emailValido == true && $senhaValido == true) {
+                $_SESSION['erros'] = null;
+                $_SESSION['usuario'] = $user['nome'];
+
+                //COOKIE (10 MINUTOS)
+                $exp = time() + (60 * 10);
+                setcookie('usuario', $_SESSION['usuario'], $exp);
+
+                header("Location: http://localhost:8080/aeeWeek/index.php");
+            }
+        }
+        */
+
+        if (!isset($_SESSION['usuario'])) {
+            $_SESSION['erros'] = ['Usuário/senha inválido!'];
+        }
+    }
 
 ?>
 
@@ -30,7 +90,28 @@
     </header>
     <main class="principal">
         <div class="conteudo">
-            
+            <h3>Identifique-se!</h3>
+            <?php if ($_SESSION['erros']) { ?>
+                <div class="erros">
+                    <?php
+                    $erros = $_SESSION['erros'];
+                    foreach ($erros as $erro) { ?>
+                        <p><?= $erro ?></p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <button>Entrar</button>
+            </form>
 
         </div>
     </main>
