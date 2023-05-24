@@ -27,7 +27,7 @@
             $exp = time() + (60 * 10);
             setcookie('usuario', $_SESSION['usuario'], $exp);
             
-            header("Location: http://localhost:8080/aeeWeek/index.php");
+            header("Location: http://localhost/aeeWeek/index.php");
         }
         else{
             echo $conexao->error();
