@@ -18,7 +18,7 @@ body {
 
 .cabecalho {
   grid-area: cabecalho;
-  background-color: #000b99;
+  background-color: green;
   color: white;
   display: flex;
   flex-direction: column;
@@ -111,12 +111,7 @@ body {
   background-color: #eee;
 }
 
-.modulo.curso {
-  border: 2px solid #000b99;
-}
-.modulo.curso > h3 {
-  background-color: #000b99;
-}
+
 
 .navegacao {
   grid-area: navegacao;

@@ -14,16 +14,6 @@ Before taking this course, students should have a basic understanding of program
 -Multidimensional arrays<br>
 -Sorting arrays<br>
 
-<!--
-<h3><b>APIs</b></h3><br>
--RESTful APIs<br>
--HTTP methods (GET, POST, PUT, DELETE)<br>
--JSON and XML data formats<br>
--API authentication<br>
--->
-
-
-
 <h3><b>Course Structure</b></h3>
 The course is divided into modules, each covering a specific topic. Each module includes lectures, code examples, and exercises to reinforce learning. The course also includes a final project, where students will use the skills they have learned to build a web application.<br>
 
